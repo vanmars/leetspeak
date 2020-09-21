@@ -4,7 +4,7 @@ class String
     index = -1
     split_sentence.each do |word|
       index += 1
-      split_sentence[index] = word.gsub("e","3").gsub("o","0")
+      split_sentence[index] = word.gsub("e","3").gsub("o","0").gsub("I","1")
     end
     return split_sentence.join(" ")
   end
